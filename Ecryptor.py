@@ -40,6 +40,10 @@ def add_to_startup_folder():
         print(f"!✗ Ошибка: {e}")
 
 print("00x(2)00003 system error")
+print("00x1003")
+time.sleep(0.2)
+print("000x300002")
+print("000x0004200 Ecryptor activated!")
 
 time.sleep(0.5)
 
